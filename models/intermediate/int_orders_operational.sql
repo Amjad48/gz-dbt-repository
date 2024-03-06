@@ -1,4 +1,5 @@
 select
+*,
 orders_id,
 date_date,
 margin + shipping_fee - logcost - cast(ship_cost as float64) AS Operational_margin
