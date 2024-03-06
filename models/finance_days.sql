@@ -13,4 +13,4 @@ select
     ,SUM(quantity) AS quantity 
 FROM {{ ref('int_orders_operational') }}
 group by date_date
-order by date_date desc
+order by date_date desc 
