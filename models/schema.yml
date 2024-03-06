@@ -7,7 +7,7 @@
         description: sales of greenweez 
         tests:
           - unique:
-              column_name: "(products_id ||'_'|| orders_id)"
+              column_name: "(orders_id||'_'||pdt_id)"
       - name: raw_gz_product
         description: product id of greenweez
         columns: 
@@ -19,7 +19,7 @@
       - name: raw_gz_ship
         description: orders id for greenweez
         columns: 
-          - name: products_id
+          - name: orders_id
             description: products_id
             tests:
              - unique
